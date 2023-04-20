@@ -31,5 +31,38 @@ namespace CalculadoraSimples
         {
             txtDisplay.Clear();
         }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            if (txtDisplay.Text.Length > 0)
+            {
+                txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1, 1);
+            }
+        }
+
+        private void btnNum_Click(object btn, EventArgs e)
+        {
+            txtDisplay.Text += (btn as Button).Text;
+        }
+
+        private void btnPlus_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnMinus_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnMulti_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDiv_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
