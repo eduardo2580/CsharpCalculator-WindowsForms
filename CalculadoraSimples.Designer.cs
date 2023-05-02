@@ -46,9 +46,7 @@
             this.btnTwo = new System.Windows.Forms.Button();
             this.btnThree = new System.Windows.Forms.Button();
             this.btnDiv = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
             this.btnZero = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
             this.btnEquals = new System.Windows.Forms.Button();
             this.btnMinus = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
@@ -105,9 +103,7 @@
             this.tableLayoutPanel2.Controls.Add(this.btnTwo, 1, 3);
             this.tableLayoutPanel2.Controls.Add(this.btnThree, 2, 3);
             this.tableLayoutPanel2.Controls.Add(this.btnDiv, 3, 3);
-            this.tableLayoutPanel2.Controls.Add(this.button17, 0, 4);
             this.tableLayoutPanel2.Controls.Add(this.btnZero, 1, 4);
-            this.tableLayoutPanel2.Controls.Add(this.button19, 2, 4);
             this.tableLayoutPanel2.Controls.Add(this.btnEquals, 3, 4);
             this.tableLayoutPanel2.Controls.Add(this.btnMinus, 3, 1);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 95);
@@ -329,19 +325,6 @@
             this.btnDiv.UseVisualStyleBackColor = true;
             this.btnDiv.Click += new System.EventHandler(this.btnDiv_Click);
             // 
-            // button17
-            // 
-            this.button17.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button17.Location = new System.Drawing.Point(3, 291);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(69, 68);
-            this.button17.TabIndex = 16;
-            this.button17.Text = "+/-";
-            this.button17.UseVisualStyleBackColor = true;
-            // 
             // btnZero
             // 
             this.btnZero.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -355,19 +338,6 @@
             this.btnZero.Text = "0";
             this.btnZero.UseVisualStyleBackColor = true;
             this.btnZero.Click += new System.EventHandler(this.btnNum_Click);
-            // 
-            // button19
-            // 
-            this.button19.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button19.Location = new System.Drawing.Point(153, 291);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(69, 68);
-            this.button19.TabIndex = 18;
-            this.button19.Text = ",";
-            this.button19.UseVisualStyleBackColor = true;
             // 
             // btnEquals
             // 
@@ -433,9 +403,7 @@
         private System.Windows.Forms.Button btnTwo;
         private System.Windows.Forms.Button btnThree;
         private System.Windows.Forms.Button btnDiv;
-        private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button btnZero;
-        private System.Windows.Forms.Button button19;
         private System.Windows.Forms.Button btnEquals;
     }
 }
