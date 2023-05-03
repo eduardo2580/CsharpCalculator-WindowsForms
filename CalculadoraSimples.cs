@@ -53,20 +53,10 @@ namespace CalculadoraSimples
 
         private void btnPlus_Click(object plus, EventArgs e)
         {
-            //if (previousOperation == Operation.None)
-            //{
-            //    previousOperation = Operation.Add;
-            //}
-            //else
-            //{
-            //    performCalculation(previousOperation);
-            //}
-
-            if (previousOperation != Operation.None)
+            if (previousOperation != Operation.none)
             {
                 performCalculation(previousOperation);
             }
-
             previousOperation = Operation.Add;
             txtDisplay.Text += (plus as Button).Text;
         }
@@ -108,60 +98,30 @@ namespace CalculadoraSimples
 
             private void btnMinus_Click(object minus, EventArgs e)
         {
-            //if (previousOperation == Operation.None)
-            //{
-            //    previousOperation = Operation.Sub;
-            //}
-            //else
-            //{
-            //    performCalculation(previousOperation);
-            //}
-
-            if (previousOperation != Operation.None)
+            if (previousOperation != Operation.none)
             {
                 performCalculation(previousOperation);
             }
-
             previousOperation = Operation.Sub;
             txtDisplay.Text += (minus as Button).Text;
         }
 
         private void btnMulti_Click(object multi, EventArgs e)
         {
-            //if (previousOperation == Operation.None)
-            //{
-            //    previousOperation = Operation.Mul;
-            //}
-            //else
-            //{
-            //    performCalculation(previousOperation);
-            //}
-
-            if (previousOperation != Operation.None)
+            if (previousOperation != Operation.none)
             {
                 performCalculation(previousOperation);
             }
-
             previousOperation = Operation.Mul;
             txtDisplay.Text += (multi as Button).Text;
         }
 
         private void btnDiv_Click(object div, EventArgs e)
         {
-            //if (previousOperation == Operation.None)
-            //{
-            //    previousOperation = Operation.Div;
-            //}
-            //else
-            //{
-            //    performCalculation(previousOperation);
-            //}
-
-            if (previousOperation != Operation.None)
+            if (previousOperation != Operation.none)
             {
                 performCalculation(previousOperation);
             }
-
             previousOperation = Operation.Div;
             txtDisplay.Text += (div as Button).Text;
         }
@@ -187,6 +147,11 @@ namespace CalculadoraSimples
             {
                 performCalculation(previousOperation);
             }
+        }
+
+        private void txtDisplay_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

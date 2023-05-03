@@ -61,11 +61,12 @@
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 80F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(308, 460);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(616, 885);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // txtDisplay
@@ -74,12 +75,14 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDisplay.Location = new System.Drawing.Point(3, 3);
+            this.txtDisplay.Location = new System.Drawing.Point(6, 6);
+            this.txtDisplay.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtDisplay.Multiline = true;
             this.txtDisplay.Name = "txtDisplay";
             this.txtDisplay.ReadOnly = true;
-            this.txtDisplay.Size = new System.Drawing.Size(302, 86);
+            this.txtDisplay.Size = new System.Drawing.Size(604, 165);
             this.txtDisplay.TabIndex = 0;
+            this.txtDisplay.TextChanged += new System.EventHandler(this.txtDisplay_TextChanged);
             // 
             // tableLayoutPanel2
             // 
@@ -106,7 +109,8 @@
             this.tableLayoutPanel2.Controls.Add(this.btnZero, 1, 4);
             this.tableLayoutPanel2.Controls.Add(this.btnEquals, 3, 4);
             this.tableLayoutPanel2.Controls.Add(this.btnMinus, 3, 1);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 95);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(6, 183);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 5;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
@@ -114,19 +118,18 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(302, 362);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(604, 696);
             this.tableLayoutPanel2.TabIndex = 1;
             this.tableLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel2_Paint);
             // 
             // btnClear
             // 
-            this.btnClear.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClear.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.Location = new System.Drawing.Point(3, 3);
+            this.btnClear.Location = new System.Drawing.Point(6, 6);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(69, 66);
+            this.btnClear.Size = new System.Drawing.Size(139, 127);
             this.btnClear.TabIndex = 0;
             this.btnClear.Text = "Apagar";
             this.btnClear.UseVisualStyleBackColor = true;
@@ -134,13 +137,12 @@
             // 
             // btnCopy
             // 
-            this.btnCopy.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCopy.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnCopy.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCopy.Location = new System.Drawing.Point(78, 3);
+            this.btnCopy.Location = new System.Drawing.Point(157, 6);
+            this.btnCopy.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnCopy.Name = "btnCopy";
-            this.btnCopy.Size = new System.Drawing.Size(69, 66);
+            this.btnCopy.Size = new System.Drawing.Size(139, 127);
             this.btnCopy.TabIndex = 1;
             this.btnCopy.Text = "Copiar";
             this.btnCopy.UseVisualStyleBackColor = true;
@@ -148,13 +150,12 @@
             // 
             // btnReset
             // 
-            this.btnReset.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnReset.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReset.Location = new System.Drawing.Point(153, 3);
+            this.btnReset.Location = new System.Drawing.Point(308, 6);
+            this.btnReset.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(69, 66);
+            this.btnReset.Size = new System.Drawing.Size(139, 127);
             this.btnReset.TabIndex = 2;
             this.btnReset.Text = "Limpar";
             this.btnReset.UseVisualStyleBackColor = true;
@@ -162,10 +163,12 @@
             // 
             // btnPlus
             // 
+            this.btnPlus.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnPlus.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPlus.Location = new System.Drawing.Point(228, 3);
+            this.btnPlus.Location = new System.Drawing.Point(459, 6);
+            this.btnPlus.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnPlus.Name = "btnPlus";
-            this.btnPlus.Size = new System.Drawing.Size(71, 66);
+            this.btnPlus.Size = new System.Drawing.Size(139, 127);
             this.btnPlus.TabIndex = 3;
             this.btnPlus.Text = "+";
             this.btnPlus.UseVisualStyleBackColor = true;
@@ -173,13 +176,12 @@
             // 
             // btnSeven
             // 
-            this.btnSeven.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSeven.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnSeven.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSeven.Location = new System.Drawing.Point(3, 75);
+            this.btnSeven.Location = new System.Drawing.Point(6, 145);
+            this.btnSeven.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnSeven.Name = "btnSeven";
-            this.btnSeven.Size = new System.Drawing.Size(69, 66);
+            this.btnSeven.Size = new System.Drawing.Size(139, 127);
             this.btnSeven.TabIndex = 4;
             this.btnSeven.Text = "7";
             this.btnSeven.UseVisualStyleBackColor = true;
@@ -187,13 +189,12 @@
             // 
             // btnEight
             // 
-            this.btnEight.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEight.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnEight.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEight.Location = new System.Drawing.Point(78, 75);
+            this.btnEight.Location = new System.Drawing.Point(157, 145);
+            this.btnEight.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnEight.Name = "btnEight";
-            this.btnEight.Size = new System.Drawing.Size(69, 66);
+            this.btnEight.Size = new System.Drawing.Size(139, 127);
             this.btnEight.TabIndex = 5;
             this.btnEight.Text = "8";
             this.btnEight.UseVisualStyleBackColor = true;
@@ -201,13 +202,12 @@
             // 
             // btnNine
             // 
-            this.btnNine.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnNine.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnNine.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNine.Location = new System.Drawing.Point(153, 75);
+            this.btnNine.Location = new System.Drawing.Point(308, 145);
+            this.btnNine.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnNine.Name = "btnNine";
-            this.btnNine.Size = new System.Drawing.Size(69, 66);
+            this.btnNine.Size = new System.Drawing.Size(139, 127);
             this.btnNine.TabIndex = 6;
             this.btnNine.Text = "9";
             this.btnNine.UseVisualStyleBackColor = true;
@@ -215,13 +215,12 @@
             // 
             // btnFour
             // 
-            this.btnFour.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnFour.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnFour.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFour.Location = new System.Drawing.Point(3, 147);
+            this.btnFour.Location = new System.Drawing.Point(6, 284);
+            this.btnFour.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnFour.Name = "btnFour";
-            this.btnFour.Size = new System.Drawing.Size(69, 66);
+            this.btnFour.Size = new System.Drawing.Size(139, 127);
             this.btnFour.TabIndex = 8;
             this.btnFour.Text = "4";
             this.btnFour.UseVisualStyleBackColor = true;
@@ -229,13 +228,12 @@
             // 
             // btnFive
             // 
-            this.btnFive.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnFive.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnFive.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFive.Location = new System.Drawing.Point(78, 147);
+            this.btnFive.Location = new System.Drawing.Point(157, 284);
+            this.btnFive.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnFive.Name = "btnFive";
-            this.btnFive.Size = new System.Drawing.Size(69, 66);
+            this.btnFive.Size = new System.Drawing.Size(139, 127);
             this.btnFive.TabIndex = 9;
             this.btnFive.Text = "5";
             this.btnFive.UseVisualStyleBackColor = true;
@@ -243,13 +241,12 @@
             // 
             // btnSix
             // 
-            this.btnSix.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSix.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnSix.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSix.Location = new System.Drawing.Point(153, 147);
+            this.btnSix.Location = new System.Drawing.Point(308, 284);
+            this.btnSix.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnSix.Name = "btnSix";
-            this.btnSix.Size = new System.Drawing.Size(69, 66);
+            this.btnSix.Size = new System.Drawing.Size(139, 127);
             this.btnSix.TabIndex = 10;
             this.btnSix.Text = "6";
             this.btnSix.UseVisualStyleBackColor = true;
@@ -257,13 +254,12 @@
             // 
             // btnMulti
             // 
-            this.btnMulti.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMulti.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnMulti.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMulti.Location = new System.Drawing.Point(228, 147);
+            this.btnMulti.Location = new System.Drawing.Point(459, 284);
+            this.btnMulti.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnMulti.Name = "btnMulti";
-            this.btnMulti.Size = new System.Drawing.Size(71, 66);
+            this.btnMulti.Size = new System.Drawing.Size(139, 127);
             this.btnMulti.TabIndex = 11;
             this.btnMulti.Text = "*";
             this.btnMulti.UseVisualStyleBackColor = true;
@@ -271,13 +267,12 @@
             // 
             // btnOne
             // 
-            this.btnOne.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnOne.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnOne.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOne.Location = new System.Drawing.Point(3, 219);
+            this.btnOne.Location = new System.Drawing.Point(6, 423);
+            this.btnOne.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnOne.Name = "btnOne";
-            this.btnOne.Size = new System.Drawing.Size(69, 66);
+            this.btnOne.Size = new System.Drawing.Size(139, 127);
             this.btnOne.TabIndex = 12;
             this.btnOne.Text = "1";
             this.btnOne.UseVisualStyleBackColor = true;
@@ -285,13 +280,12 @@
             // 
             // btnTwo
             // 
-            this.btnTwo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnTwo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnTwo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTwo.Location = new System.Drawing.Point(78, 219);
+            this.btnTwo.Location = new System.Drawing.Point(157, 423);
+            this.btnTwo.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnTwo.Name = "btnTwo";
-            this.btnTwo.Size = new System.Drawing.Size(69, 66);
+            this.btnTwo.Size = new System.Drawing.Size(139, 127);
             this.btnTwo.TabIndex = 13;
             this.btnTwo.Text = "2";
             this.btnTwo.UseVisualStyleBackColor = true;
@@ -299,13 +293,12 @@
             // 
             // btnThree
             // 
-            this.btnThree.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnThree.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnThree.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThree.Location = new System.Drawing.Point(153, 219);
+            this.btnThree.Location = new System.Drawing.Point(308, 423);
+            this.btnThree.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnThree.Name = "btnThree";
-            this.btnThree.Size = new System.Drawing.Size(69, 66);
+            this.btnThree.Size = new System.Drawing.Size(139, 127);
             this.btnThree.TabIndex = 14;
             this.btnThree.Text = "3";
             this.btnThree.UseVisualStyleBackColor = true;
@@ -313,13 +306,12 @@
             // 
             // btnDiv
             // 
-            this.btnDiv.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDiv.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnDiv.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDiv.Location = new System.Drawing.Point(228, 219);
+            this.btnDiv.Location = new System.Drawing.Point(459, 423);
+            this.btnDiv.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnDiv.Name = "btnDiv";
-            this.btnDiv.Size = new System.Drawing.Size(71, 66);
+            this.btnDiv.Size = new System.Drawing.Size(139, 127);
             this.btnDiv.TabIndex = 15;
             this.btnDiv.Text = "/";
             this.btnDiv.UseVisualStyleBackColor = true;
@@ -327,13 +319,12 @@
             // 
             // btnZero
             // 
-            this.btnZero.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnZero.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnZero.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnZero.Location = new System.Drawing.Point(78, 291);
+            this.btnZero.Location = new System.Drawing.Point(157, 562);
+            this.btnZero.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnZero.Name = "btnZero";
-            this.btnZero.Size = new System.Drawing.Size(69, 68);
+            this.btnZero.Size = new System.Drawing.Size(139, 128);
             this.btnZero.TabIndex = 17;
             this.btnZero.Text = "0";
             this.btnZero.UseVisualStyleBackColor = true;
@@ -341,13 +332,12 @@
             // 
             // btnEquals
             // 
-            this.btnEquals.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEquals.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnEquals.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEquals.Location = new System.Drawing.Point(228, 291);
+            this.btnEquals.Location = new System.Drawing.Point(459, 562);
+            this.btnEquals.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnEquals.Name = "btnEquals";
-            this.btnEquals.Size = new System.Drawing.Size(71, 68);
+            this.btnEquals.Size = new System.Drawing.Size(139, 128);
             this.btnEquals.TabIndex = 19;
             this.btnEquals.Text = "=";
             this.btnEquals.UseVisualStyleBackColor = true;
@@ -355,13 +345,12 @@
             // 
             // btnMinus
             // 
-            this.btnMinus.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinus.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnMinus.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMinus.Location = new System.Drawing.Point(228, 75);
+            this.btnMinus.Location = new System.Drawing.Point(459, 145);
+            this.btnMinus.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnMinus.Name = "btnMinus";
-            this.btnMinus.Size = new System.Drawing.Size(71, 66);
+            this.btnMinus.Size = new System.Drawing.Size(139, 127);
             this.btnMinus.TabIndex = 7;
             this.btnMinus.Text = "-";
             this.btnMinus.UseVisualStyleBackColor = true;
@@ -369,10 +358,11 @@
             // 
             // CalculadoraSimples
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(308, 460);
+            this.ClientSize = new System.Drawing.Size(616, 885);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "CalculadoraSimples";
             this.Text = "Calculadora Simples";
             this.tableLayoutPanel1.ResumeLayout(false);
