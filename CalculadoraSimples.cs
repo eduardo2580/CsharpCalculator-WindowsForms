@@ -53,7 +53,7 @@ namespace CalculadoraSimples
 
         private void btnPlus_Click(object plus, EventArgs e)
         {
-            if (previousOperation != Operation.none)
+            if (previousOperation != Operation.None)
             {
                 performCalculation(previousOperation);
             }
@@ -98,7 +98,7 @@ namespace CalculadoraSimples
 
             private void btnMinus_Click(object minus, EventArgs e)
         {
-            if (previousOperation != Operation.none)
+            if (previousOperation != Operation.None)
             {
                 performCalculation(previousOperation);
             }
@@ -108,7 +108,7 @@ namespace CalculadoraSimples
 
         private void btnMulti_Click(object multi, EventArgs e)
         {
-            if (previousOperation != Operation.none)
+            if (previousOperation != Operation.None)
             {
                 performCalculation(previousOperation);
             }
@@ -118,7 +118,7 @@ namespace CalculadoraSimples
 
         private void btnDiv_Click(object div, EventArgs e)
         {
-            if (previousOperation != Operation.none)
+            if (previousOperation != Operation.None)
             {
                 performCalculation(previousOperation);
             }
