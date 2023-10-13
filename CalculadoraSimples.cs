@@ -24,7 +24,12 @@ namespace CalculadoraSimples
 
         private void btnCopy_Click(object sender, EventArgs e)
         {
-            Clipboard.SetText(txtDisplay.Text);
+            try {
+                Clipboard.SetText(txtDisplay.Text);
+            }
+            catch {
+                MessageBox.Show("Não consegui copiar!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnReset_Click(object sender, EventArgs e)
