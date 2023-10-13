@@ -63,36 +63,41 @@ namespace CalculadoraSimples
 
         private void performCalculation(Operation previousOperation)
         {
-            List<double> lstNums = new List<double>();
-            switch (previousOperation)
-            {
-                case Operation.Add:
-                    lstNums = txtDisplay.Text.Split('+').Select(double.Parse).ToList();
-                    txtDisplay.Text = (lstNums[0] + lstNums[1]).ToString();
-                    break;
-                case Operation.Sub:
-                    lstNums = txtDisplay.Text.Split('-').Select(double.Parse).ToList();
-                    txtDisplay.Text = (lstNums[0] - lstNums[1]).ToString();
-                    break;
-                case Operation.Mul:
-                    lstNums = txtDisplay.Text.Split('*').Select(double.Parse).ToList();
-                    txtDisplay.Text = (lstNums[0] * lstNums[1]).ToString();
-                    break;
-                case Operation.Div:
-                    try
-                    {
-                        lstNums = txtDisplay.Text.Split('/').Select(double.Parse).ToList();
-                        txtDisplay.Text = (lstNums[0] / lstNums[1]).ToString();
-                    }
-                    catch (DivideByZeroException)
-                    {
-                        txtDisplay.Text = "NÃO É POSSÍVEL DIVIDIR";
-                    }
-                    break;
-                case Operation.None:
-                    break;
-                default:
-                    break;
+            try { 
+                List<double> lstNums = new List<double>();
+                switch (previousOperation)
+                {
+                    case Operation.Add:
+                        lstNums = txtDisplay.Text.Split('+').Select(double.Parse).ToList();
+                        txtDisplay.Text = (lstNums[0] + lstNums[1]).ToString();
+                       break;
+                   case Operation.Sub:
+                        lstNums = txtDisplay.Text.Split('-').Select(double.Parse).ToList();
+                       txtDisplay.Text = (lstNums[0] - lstNums[1]).ToString();
+                        break;
+                    case Operation.Mul:
+                        lstNums = txtDisplay.Text.Split('*').Select(double.Parse).ToList();
+                        txtDisplay.Text = (lstNums[0] * lstNums[1]).ToString();
+                        break;
+                   case Operation.Div:
+                       try
+                       {
+                           lstNums = txtDisplay.Text.Split('/').Select(double.Parse).ToList();
+                            txtDisplay.Text = (lstNums[0] / lstNums[1]).ToString();
+                       }
+                        catch (DivideByZeroException)
+                        {
+                            txtDisplay.Text = "NÃO É POSSÍVEL DIVIDIR";
+                        }
+                        break;
+                   case Operation.None:
+                        break;
+                    default:
+                        break;
+                }
+            }
+            catch {
+                MessageBox.Show("Não consegui realizar a operação!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
