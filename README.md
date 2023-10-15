@@ -1,6 +1,9 @@
 # A Simple Calculator
 A simple calculator in Portuguese written in C#.
 
+## Technologies
+This project uses C# and Windows Forms.
+
 ## How to run
 To run this project, you need to have Visual Studio 2022 installed on your computer.
 
