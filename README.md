@@ -22,3 +22,4 @@ git clone [https://github.com/eduardo2580/BasicCalculator]
    
 5. To run the project, you can choose Debug > Start Debugging from the menu bar, or press F5 on your keyboard.
     
+© 2023-2024 Eduardo Souza Rodrigues. All rights reserved.
