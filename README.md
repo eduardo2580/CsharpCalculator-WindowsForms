@@ -7,7 +7,6 @@ This project uses C# and Windows Forms.
 ## How to run
 To run this project, you need to have Visual Studio 2022 installed on your computer.
 
-https://github.com/eduardo2580/BasicCalculator.git
 1. **Clone the repository:**
    Execute the following command to obtain the project files in your local environment:
 
