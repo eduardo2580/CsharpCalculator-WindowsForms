@@ -1,7 +1,7 @@
 # A Simple Calculator
 A simple calculator in Portuguese written in C#.
 
-**© 2025 Eduardo Souza Rodrigues - Licensed for Educational Use Only**  
+**© 2023-2025 Eduardo Souza Rodrigues - Licensed for Educational Use Only**  
 *Protected under Brazilian Law 9,610/98 - Strictly Non-Commercial Academic Use*
 
 [![License: Restricted Educational](https://img.shields.io/badge/License-Restricted_Educational-red.svg)](LICENSE)
@@ -30,5 +30,3 @@ git clone https://github.com/eduardo2580/CsharpCalculator-WindowsForms.git
 4. Wait for Visual Studio to load the solution and its dependencies.
    
 5. To run the project, you can choose Debug > Start Debugging from the menu bar, or press F5 on your keyboard.
-    
-© 2023-2024 Eduardo Souza Rodrigues. All rights reserved.
